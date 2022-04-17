@@ -1,0 +1,58 @@
+//2021 years
+
+public class Student {
+
+        int numberOfTicket;
+        String name;
+        String surname;
+        int yearOfTeach;
+        double averageMarkByMath;
+        double averageMarkByEconomy;
+        double averageMarkByEnglish;
+
+    }
+
+    class StudentTest{
+        public static void main(String[] args) {
+        Student student1 = new Student();
+        student1.numberOfTicket = 3;
+        student1.name = "Vasiliy";
+        student1.surname = "Tishenko";
+        student1.yearOfTeach = 4;
+        student1.averageMarkByMath = 4.2;
+        student1.averageMarkByEconomy = 3.8;
+        student1.averageMarkByEnglish = 5.0;
+
+String result1 = String.format("%.1f",(student1.averageMarkByMath+ student1.averageMarkByEconomy+ student1.averageMarkByEnglish)/3);
+
+Student student2 = new Student();
+            student2.numberOfTicket = 4;
+            student2.name = "Mikhail";
+            student2.surname = "Yazik";
+            student2.yearOfTeach = 3;
+            student2.averageMarkByMath = 3.6;
+            student2.averageMarkByEconomy = 4.1;
+            student2.averageMarkByEnglish = 3.8;
+
+            String result2 = String.format("%.1f",(student2.averageMarkByMath+ student2.averageMarkByEconomy+ student2.averageMarkByEnglish)/3);
+        Student student3 = new Student();
+
+            student3.numberOfTicket = 1;
+            student3.name = "Nikita";
+            student3.surname = "Zhlobo";
+            student3.yearOfTeach = 2;
+            student3.averageMarkByMath = 4.8;
+            student3.averageMarkByEconomy = 2.8;
+            student3.averageMarkByEnglish = 3.0;
+
+            String result3 = String.format("%.1f",(student3.averageMarkByMath+ student3.averageMarkByEconomy+ student3.averageMarkByEnglish)/3);
+
+            System.out.println("Student" + " " + student1.name + " " + student1.surname + " " +
+                    "have a average mark by all lessons is" + " " +  result1 + ";");
+            System.out.println("Student" + " " + student2.name + " " + student2.surname + " " +
+                    "have a average mark by all lessons is" + " " + result2 + ";");
+            System.out.println("Student" + " " + student3.name + " " + student3.surname + " " +
+                    "have a average mark by all lessons is" + " " + result3 + ".");
+
+    }
+}
